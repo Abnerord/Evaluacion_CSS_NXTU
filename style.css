@@ -1,0 +1,273 @@
+@font-face{
+    font-family: 'Dancing Script';
+    src: url('dancing-script.otf');
+}
+
+body{
+    background-color: black;
+}
+
+#encabezado {
+    width: 900px;
+    margin: auto;
+    background-color: #5b7989;
+    border-top-right-radius: 10px;
+    font-family: 'Dancing Script';
+    display: flex;
+    animation: animacionheader 1s;
+    
+}
+
+#titulo {
+    color: white;
+    text-align: left;
+    text-shadow: 2px 2px 2px #02010a;
+    flex-grow: 1;
+    padding: 10px;
+}
+
+#menu {
+    flex-grow: 1;
+    font-size: 20px;
+    padding: 10px;
+}
+#menu li {
+    display: inline;
+    color: white;
+}
+
+a {
+    color: white;
+}
+
+#actual {
+    text-decoration: none;
+}
+
+#central{
+    background-color: #82c3a6;
+    margin: auto;
+    width: 900px;
+}
+
+#imagencentral{
+    width: 90%;
+    height: 95%;
+    display: block;
+    margin: auto;
+    padding-top: 10px;
+    box-shadow: 2px 2px 2px #02010a;
+
+}
+
+#imagenessecundarias{
+    width: 900px;
+    margin: auto;
+    background-color:  #d5c75f;
+    border: 1px solid black;
+    display: flex;
+
+}
+
+#filtros{
+    width: 900px;
+    margin: auto;
+    background-color:  #d5c75f;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+#columnauno {
+    flex-grow: 1;
+    padding: 10% 5% 5% 5%;
+}
+
+#imagenuno {
+    width: 90%;
+    box-shadow: 2px 2px 2px #02010a;
+}
+
+#columnados {
+    flex-grow: 1;
+    padding: 10% 5% 5% 5%;
+    
+}
+
+#imagendos {
+    width: 90%;
+    box-shadow: 2px 2px 2px #02010a;
+    
+}
+
+#imagenuno:hover{
+    animation: animacionuno 1s;
+    box-shadow: 2px 2px 2px #82c3a6;
+}
+
+#imagendos:hover{
+    animation: animaciondos 1s;
+    box-shadow: 2px 2px 2px #82c3a6;
+}
+
+#piedepagina {
+    width: 900px;
+
+    margin: auto;
+    color: white;
+    background-color: #5b7989;
+    border-bottom: 10px;
+    font-family: 'Dancing Script';
+    display: flex;
+}
+
+#col1{
+    flex-grow: 1;
+    margin: auto;
+    padding: 2px 2px 2px 20px;
+}
+#col2{
+    flex-grow: 1;
+    margin: auto;
+    padding: 2px 30px 2px 30px;
+}
+#col3{
+    flex-grow: 1;
+    margin: auto;
+    padding: 2px 30px 2px 10px;
+}
+#col4{
+    flex-grow: 1;
+    margin: auto;
+    padding: 2px 30px 2px 10px;
+}
+
+#fila1{
+    display: flex;
+}
+
+#row1{
+    flex-grow: 1;
+    padding: 10% 5% 5% 5%;
+   
+}
+#row2{
+    flex-grow: 1;
+    padding: 10% 5% 5% 5%;
+    
+}
+#row3{
+    flex-grow: 1;
+    padding: 10% 5% 5% 5%;
+    
+}
+
+#imag{
+    width: 90%;
+    -webkit-filter: blur(10px);
+    filter: blur(10px);
+    box-shadow: 2px 2px 2px #02010a;
+}
+#imag1{
+    width: 90%;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    box-shadow: 2px 2px 2px #02010a;
+}
+#imag2{
+    width: 90%;
+    -webkit-filter: sepia(90%);
+    filter: sepia(90%);
+    box-shadow: 2px 2px 2px #02010a;
+}
+
+#fila2{
+    display: flex;
+}
+
+#row4{
+    flex-grow: 1;
+    padding: 10% 5% 5% 5%;
+}
+#row5{
+    flex-grow: 1;
+    padding: 10% 5% 5% 5%;
+}
+#row6{
+    flex-grow: 1;
+    padding: 10% 5% 5% 5%;
+}
+
+#imag3{
+    width: 90%;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    box-shadow: 2px 2px 2px #02010a;
+}
+#imag4{
+    width: 90%;
+    box-shadow: 2px 2px 2px #02010a;
+}
+#imag5{
+    width: 90%;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    box-shadow: 2px 2px 2px #02010a;
+}
+
+
+
+
+@media (max-width:900px){
+    #titulo {
+        text-align: center;
+    }
+    #menu {
+        text-align: center;
+    }
+    #encabezado {
+        width: 100%;
+        flex-direction: column;
+    }
+    #central{
+        width: 100%;
+     }
+     #imagenessecundarias{
+        width: 100%;
+        flex-direction: column;
+    }
+    
+    #piedepagina{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    #filtros{
+        width: 100%;
+    }
+    #fila1{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    #fila2{
+        width: 100%;
+        flex-direction: column;
+    }
+}
+
+@-webkit-keyframes animacionuno{
+    50%{transform: rotate(30deg);}
+    100%{ transform: rotate(0deg);}
+}
+
+@-webkit-keyframes animaciondos{
+    50%{transform: translate(2px,-5px);}
+    100%{ transform: translate(1px,1px);}
+}
+
+@-webkit-keyframes animacionheader{
+    0%{margin-top: 150%}
+    60%{ margin-top: -5%;}
+    100%{ margin-top: 0%}
+}
